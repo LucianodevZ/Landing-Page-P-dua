@@ -1,0 +1,30 @@
+:root {
+  /* ===== CORES PRINCIPAIS ===== */
+  --cor-header: #2b1a14;        /* navbar (marrom escuro) */
+  --cor-hero: #f2872f;          /* fundo principal (laranja) */
+
+  /* ===== CORES DE APOIO ===== */
+  --cor-fundo: #0f0f0f;
+  --cor-card: #1a1a1a;
+
+  /* ===== CORES DE TEXTO ===== */
+  --texto-branco: #ffffff;
+  --texto-secundario: #b3b3b3;
+  --texto-destaque: #ffd2a6;
+
+  /* ===== BOTÕES ===== */
+  --botao-principal: #8b1e00;
+  --botao-hover: #6f1800;
+
+  /* ===== TIPOGRAFIA ===== */
+  --fonte-titulo: 'Bebas Neue', sans-serif;
+  --fonte-texto: 'Poppins', sans-serif;
+
+  /* ===== ESPAÇAMENTO ===== */
+  --padding-padrao: 16px;
+  --padding-grande: 24px;
+
+  /* ===== BORDAS ===== */
+  --radius: 12px;
+  --radius-full: 999px;
+}

@@ -1,0 +1,35 @@
+/* Remove espaçamentos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ajuste de fonte e suavização */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove estilo de listas */
+ul {
+  list-style: none;
+}
+
+/* Remove estilo de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imagens responsivas */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Botões mais consistentes */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}

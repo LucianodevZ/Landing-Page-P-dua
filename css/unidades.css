@@ -1,0 +1,131 @@
+/* ===== UNIDADES ===== */
+
+.unidades {
+    background-color: var(--cor-fundo);
+    padding: 80px 0;
+}
+
+.unidades-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.unidades-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 72px;
+    color: var(--cor-hero);
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 56px;
+}
+
+.unidades-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+/* ===== CARD DE UNIDADE ===== */
+.unidade-card {
+    background-color: var(--cor-fundo);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.unidade-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Mapa embed */
+.unidade-mapa {
+    width: 100%;
+    height: 240px;
+    border: none;
+    display: block;
+    filter: grayscale(30%);
+}
+
+.unidade-info {
+    padding: 24px;
+}
+
+.unidade-nome {
+    font-family: var(--fonte-titulo);
+    font-size: 28px;
+    color: var(--cor-hero);
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.unidade-detalhe {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: var(--texto-secundario);
+    font-family: var(--fonte-texto);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.unidade-detalhe img {
+    width: 18px;
+    margin-top: 2px;
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+.unidade-detalhe span {
+    color: var(--texto-secundario);
+}
+
+.unidade-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: var(--cor-hero);
+    color: var(--cor-header);
+    padding: 12px 32px;
+    border-radius: var(--radius-full);
+    font-family: var(--fonte-texto);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+.unidade-btn:hover {
+    background-color: #e07828;
+}
+
+/* ===== TABLET (até 768px) ===== */
+@media (max-width: 768px) {
+    .unidades-titulo {
+        font-size: 56px;
+    }
+
+    .unidades-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
+
+/* ===== MOBILE (até 640px) ===== */
+@media (max-width: 640px) {
+    .unidades {
+        padding: 56px 0;
+    }
+
+    .unidades-titulo {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+
+    .unidade-mapa {
+        height: 200px;
+    }
+}

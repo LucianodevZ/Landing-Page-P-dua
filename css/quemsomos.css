@@ -1,0 +1,153 @@
+/* ===== QUEM SOMOS ===== */
+
+.quem-somos {
+    background-color: var(--cor-fundo);
+    padding: 80px 0;
+}
+
+.quem-somos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.quem-somos-card {
+    background-color: var(--cor-hero);
+    border-radius: 28px;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    gap: 0;
+}
+
+/* Foto */
+.quem-somos-img {
+    width: 45%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.quem-somos-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Texto */
+.quem-somos-texto {
+    padding: 52px 52px 52px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quem-somos-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 80px;
+    color: var(--cor-header);
+    letter-spacing: 3px;
+    line-height: 1;
+    margin-bottom: 28px;
+}
+
+.quem-somos-texto p {
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+    color: var(--cor-header);
+    line-height: 1.75;
+    margin-bottom: 16px;
+    opacity: 0.85;
+}
+
+.quem-somos-texto p:last-of-type {
+    margin-bottom: 0;
+}
+
+.quem-somos-assinatura {
+    margin-top: 20px;
+    font-family: var(--fonte-texto);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--cor-header);
+    opacity: 0.7;
+    line-height: 1.6;
+}
+
+.btn-saber-mais {
+    display: inline-block;
+    margin-top: 28px;
+    align-self: flex-start;
+    background-color: var(--cor-header);
+    color: var(--texto-branco);
+    padding: 14px 40px;
+    border-radius: var(--radius-full);
+    font-family: var(--fonte-texto);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+.btn-saber-mais:hover {
+    background-color: #1a0e0a;
+}
+
+/* ===== TABLET (até 900px) ===== */
+@media (max-width: 900px) {
+    .quem-somos-titulo {
+        font-size: 60px;
+    }
+
+    .quem-somos-img {
+        width: 42%;
+    }
+
+    .quem-somos-texto {
+        padding: 36px 36px 36px 24px;
+    }
+}
+
+/* ===== MOBILE (até 640px) ===== */
+@media (max-width: 640px) {
+    .quem-somos {
+        padding: 56px 0;
+    }
+
+    .quem-somos-card {
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    .quem-somos-img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .quem-somos-img img {
+        border-radius: 16px 16px 0 0;
+        padding: 16px 16px 0;
+        height: 100%;
+    }
+
+    .quem-somos-texto {
+        padding: 28px 24px 36px;
+    }
+
+    .quem-somos-titulo {
+        font-size: 52px;
+        margin-bottom: 20px;
+    }
+
+    .quem-somos-texto p {
+        font-size: 15px;
+    }
+
+    .btn-saber-mais {
+        width: 100%;
+        text-align: center;
+    }
+}

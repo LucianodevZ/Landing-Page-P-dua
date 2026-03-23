@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pádua Burguer</title>
+    <link rel="stylesheet" href="css/variaveis.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/cardapio.css">
+    <link rel="stylesheet" href="css/unidades.css">
+    <link rel="stylesheet" href="css/quemsomos.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/imgs/logo-certo.png" alt="Pádua Burguer">
+            </div>
+ 
+            <nav class="nav" id="main-nav">
+                <ul>
+                    <li><a href="#header">Início</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#quem-somos">Quem somos</a></li>
+                    <li><a href="#unidades">Unidades</a></li>
+                </ul>
+                <a href="https://pedido.anota.ai/" class="delivery" id="delivery-mobile">
+                    <img src="assets/icons/motoboy.svg" alt="">
+                    <span>Delivery</span>
+                </a>
+            </nav>
+ 
+            <a href="https://pedido.anota.ai/" class="delivery" id="delivery-desktop">
+                <img src="assets/icons/motoboy.svg" alt="">
+                <span>Delivery</span>
+            </a>
+ 
+            <!-- botao do mobile -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+
+            <div class="hero-text">
+                <h1>Só Pádua<br>
+                <span>É Pádua</span></h1>
+                <p>O melhor da cidade</p>
+
+                <a href="https://pedido.anota.ai/" class="btn-pedir">Fazer Pedido</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="assets/imgs/lanche-certo.png" alt="Hambúrguer">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cardapio" id="cardapio">
+    <div class="cardapio-container">
+
+        <h2 class="cardapio-titulo">Cardápio</h2>
+
+        <div class="cardapio-grid">
+
+            <!-- artesanal -->
+            <div class="categoria">
+                <h3 class="categoria-titulo">Artesanais</h3>
+                <div class="categoria-items">
+                    <div class="card-item">
+                        <img src="assets/imgs/yanke.jpeg" alt="yank gourmet" class="card-item-img">
+                        <p class="card-item-nome">Yank Gourmet</p>
+                    </div>
+                    <div class="card-item">
+                        <img src="assets/imgs/madero.jpeg" alt="madeira burguer" class="card-item-img">
+                        <p class="card-item-nome">Madeira Burguer</p>
+                    </div>
+                    <div class="card-item">
+                        <img src="assets/imgs/big.jpeg" alt="big padua" class="card-item-img">
+                        <p class="card-item-nome">Big Pádua</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- do mes -->
+            <div class="categoria">
+                <h3 class="categoria-titulo">Especiais do Mês</h3>
+                <div class="categoria-items">
+                    <div class="card-item">
+                        <div class="card-item-img-placeholder"></div>
+                        <p class="card-item-nome">Selecionar</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-img-placeholder"></div>
+                        <p class="card-item-nome">Selecionar</p>
+                    </div>
+                    <div class="card-item">
+                        <img src="assets/imgs/tilapia.jfif" alt="tilapia crocante" class="card-item-img">
+                        <p class="card-item-nome">Tilápia Crocante</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tradicional -->
+            <div class="categoria">
+                <h3 class="categoria-titulo">Tradicionais</h3>
+                <div class="categoria-items">
+                    <div class="card-item">
+                        <img src="assets/imgs/xburgue.jpeg" alt="x-burguer" class="card-item-img">
+                        <p class="card-item-nome">X-Burguer</p>
+                    </div>
+                    <div class="card-item">
+                        <img src="assets/imgs/xtudo.jpeg" alt="x-tudo" class="card-item-img">
+                        <p class="card-item-nome">X-Tudo</p>
+                    </div>
+                    <div class="card-item">
+                        <img src="assets/imgs/xegg.jpeg" alt="x-egg bacon salada" class="card-item-img">
+                        <p class="card-item-nome">X-Egg Bacon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- porção -->
+            <div class="categoria">
+                <h3 class="categoria-titulo">Porções</h3>
+                <div class="categoria-items">
+                    <div class="card-item">
+                        <img src="assets/imgs/fritas.jfif" alt="fritas" class="card-item-img">
+                        <p class="card-item-nome">Fritas</p>
+                    </div>
+                    <div class="card-item">
+                        <img src="assets/imgs/nug.jfif" alt="nuggets" class="card-item-img">
+                        <p class="card-item-nome">Nuggets</p>
+                    </div>
+                    <div class="card-item">
+                        <img src="assets/imgs/cebola.jfif" alt="cebola empanada" class="card-item-img">
+                        <p class="card-item-nome">Onion Rings</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- bebidas -->
+            <div class="categoria">
+                <h3 class="categoria-titulo">Drinks</h3>
+                <div class="categoria-items">
+                    <div class="card-item">
+                        <div class="card-item-img-placeholder"></div>
+                        <p class="card-item-nome">Sucos Naturais</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-img-placeholder"></div>
+                        <p class="card-item-nome">Refrigerantes</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-img-placeholder"></div>
+                        <p class="card-item-nome">Bebidas Alcolicas</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- doces -->
+            <div class="categoria">
+                <h3 class="categoria-titulo">Doces</h3>
+                <div class="categoria-items">
+                    <div class="card-item">
+                        <div class="card-item-img-placeholder"></div>
+                        <p class="card-item-nome">Milk Shake</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-img-placeholder"></div>
+                        <p class="card-item-nome">Brownie no Pote</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-item-img-placeholder"></div>
+                        <p class="card-item-nome">Cookie Kinder</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="unidades" id="unidades">
+    <div class="unidades-container">
+
+        <h2 class="unidades-titulo">Unidades</h2>
+
+        <div class="unidades-grid">
+
+            <!-- paris -->
+            <div class="unidade-card">
+                <iframe
+                    class="unidade-mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117186.35568739724!2d-45.815525402734345!3d-23.385554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cda70027c9c341%3A0x458e461c48a6d4a!2sP%C3%A1dua%20Burguer!5e0!3m2!1spt-BR!2sbr!4v1773881059673!5m2!1spt-BR!2sbr"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <div class="unidade-info">
+                    <h3 class="unidade-nome">Paraibuna</h3>
+
+                    <div class="unidade-detalhe">
+                        <img src="assets/icons/local.svg" alt="">
+                        <span>R. Coronel Camargo, 76 - Centro, Paraibuna - SP</span>
+                    </div>
+
+                    <div class="unidade-detalhe">
+                        <img src="assets/icons/clock.svg" alt="">
+                        <span>Seg a Dom: 18h -  </span>
+                    </div>
+
+                    <div class="unidade-detalhe">
+                        <img src="assets/icons/phone.svg" alt="">
+                        <span>(12) 98846-9457</span>
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/4XUkoY4VRzzhNtmv9" target="_blank" class="unidade-btn">
+                        Ver no mapa
+                    </a>
+                </div>
+            </div>
+
+            <!-- caragua -->
+            <div class="unidade-card">
+                <iframe
+                    class="unidade-mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.5144794525654!2d-45.41051522381675!3d-23.62173947875843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd6389f5af7aeb%3A0x8f11749a5c3f09bb!2sP%C3%A1dua%20Burguer%20Caraguatatuba!5e0!3m2!1spt-BR!2sbr!4v1773881270959!5m2!1spt-BR!2sbr"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe> 
+
+                <div class="unidade-info">
+                    <h3 class="unidade-nome">Caraguatatuba</h3>
+
+                    <div class="unidade-detalhe">
+                        <img src="assets/icons/local.svg" alt="">
+                        <span>R. Padre Anchieta, 922 - Centro, Caraguatatuba - SP</span>
+                    </div>
+
+                    <div class="unidade-detalhe">
+                        <img src="assets/icons/clock.svg" alt="">
+                        <span>Seg a Dom: 18h - 23:30h</span>
+                    </div>
+
+                    <div class="unidade-detalhe">
+                        <img src="assets/icons/phone.svg" alt="">
+                        <span>(012) 99658-8586</span>
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/K45M3AJmMozM2ZNb9" target="_blank" class="unidade-btn">
+                        Ver no mapa
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="quem-somos" id="quem-somos">
+    <div class="quem-somos-container">
+        <div class="quem-somos-card">
+
+            <!-- pegar uma boa foto) -->
+            <div class="quem-somos-img">
+                <img src="assets/imgs/loja.heic" alt="Pádua Burguer — nossa loja">
+            </div>
+
+            <!-- texto exemplo -->
+            <div class="quem-somos-texto">
+                <h2 class="quem-somos-titulo">Quem Somos?</h2>
+
+                <p>
+                    Nascemos da paixão por um bom hambúrguer — aquele feito com
+                    cuidado, ingredientes frescos e muito sabor. Desde o primeiro
+                    dia, o nosso objetivo é simples: entregar uma experiência que
+                    vai além da refeição.
+                </p>
+
+                <p>
+                    Cada lanche é preparado na hora, com pão artesanal, carne
+                    selecionada e molhos autorais. Acreditamos que comida boa não
+                    precisa ser complicada — só precisa ser feita com amor.
+                </p>
+
+                <p class="quem-somos-assinatura">
+                    Pádua Burguer<br>
+                    Feito com amor, servido com orgulho.
+                </p>
+
+                <a href="https://www.instagram.com/paduaburguer/" target="_blank" class="btn-saber-mais">
+                    Saber mais
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+
+            <!-- redes -->
+            <div>
+                <div class="footer-logo">
+                    <img src="assets/imgs/logo-certo.png" alt="Pádua Burguer">
+                </div>
+                <div class="footer-redes">
+                    <a href="https://www.instagram.com/paduaburguer" target="_blank" class="footer-rede" aria-label="Instagram">
+                        <img src="assets/icons/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="footer-rede" aria-label="Facebook">
+                        <img src="assets/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://wa.me/55" target="_blank" class="footer-rede" aria-label="WhatsApp">
+                        <img src="assets/icons/whatsapp.svg" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+
+            <!-- sobre -->
+            <div class="footer-sobre">
+                <h4 class="footer-col-titulo">Sobre</h4>
+                <p>
+                    Nascemos da paixão por um bom hambúrguer — feito com
+                    cuidado, ingredientes frescos e muito sabor. Cada lanche
+                    é preparado na hora, com pão artesanal, carne selecionada
+                    e molhos autorais.
+                </p>
+                <strong>Pádua Burguer — Feito com amor, servido com orgulho.</strong>
+            </div>
+
+            <!-- acesso rapido -->
+            <div class="footer-links">
+                <h4 class="footer-col-titulo">Acesso Rápido</h4>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#unidades">Unidades</a></li>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="https://pedido.anota.ai/" target="_blank">Fazer Pedido</a></li>
+                </ul>
+            </div>
+
+           <!-- contato -->
+    <div>
+        <h4 class="footer-col-titulo">Nossos Contatos</h4>
+            <div class="footer-contatos">
+                <div class="footer-contato-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Paraibuna e Caraguatatuba — SP</span>
+                </div>
+            <div class="footer-contato-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>(12) 98846-9457</span>
+            </div>
+            <div class="footer-contato-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>contato@paduaburguer.com.br</span>
+            </div>
+    </div>
+</footer>
+
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

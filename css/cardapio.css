@@ -1,0 +1,134 @@
+/* ===== CARDÁPIO ===== */
+
+.cardapio {
+    background-color: var(--cor-fundo);
+    padding: 80px 0;
+}
+
+.cardapio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.cardapio-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 72px;
+    color: var(--cor-hero);
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 56px;
+}
+
+/* ===== GRID DE CATEGORIAS (2 colunas) ===== */
+.cardapio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px 64px;
+}
+
+/* ===== CATEGORIA ===== */
+.categoria-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 36px;
+    color: var(--texto-branco);
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--cor-hero);
+    display: inline-block;
+}
+
+/* ===== CARDS DOS ITENS ===== */
+.categoria-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+}
+
+.card-item {
+    background-color: var(--cor-card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: default;
+}
+
+.card-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+.card-item-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background-color: var(--cor-hero);
+    display: block;
+}
+
+/* Placeholder enquanto sem imagem */
+.card-item-img-placeholder {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--cor-hero);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.4;
+}
+
+.card-item-nome {
+    font-family: var(--fonte-titulo);
+    font-size: 18px;
+    color: var(--texto-branco);
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 14px 10px;
+    background-color: #1f1209;
+}
+
+/* ===== TABLET (até 900px) ===== */
+@media (max-width: 900px) {
+    .cardapio-titulo {
+        font-size: 56px;
+    }
+
+    .cardapio-grid {
+        gap: 36px 40px;
+    }
+
+    .categoria-titulo {
+        font-size: 28px;
+    }
+
+    .categoria-items {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+}
+
+/* ===== MOBILE (até 640px) ===== */
+@media (max-width: 640px) {
+    .cardapio {
+        padding: 56px 0;
+    }
+
+    .cardapio-titulo {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+
+    /* Uma coluna no mobile */
+    .cardapio-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .categoria-titulo {
+        font-size: 28px;
+    }
+
+    .categoria-items {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+}
