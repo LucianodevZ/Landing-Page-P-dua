@@ -47,7 +47,7 @@ Melhorias futuras:
 
 ## 🔗 Acesse o projeto
 
-(https://github.com/LucianodevZ/Landing-Page-P-dua)
+(https://lucianodevz.github.io/Landing-Page-P-dua/)
 
 ---
 
