@@ -118,7 +118,6 @@
         margin-bottom: 40px;
     }
 
-    /* Uma coluna no mobile */
     .cardapio-grid {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -128,7 +127,42 @@
         font-size: 28px;
     }
 
+    .categoria {
+        overflow: hidden;
+    }
+
     .categoria-items {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        display: flex;
+        gap: 12px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 8px;
+    }
+
+    .categoria-items::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card-item {
+        flex: 0 0 62%;
+        max-width: 62%;
+        scroll-snap-align: center;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 0.75;
+    }
+
+    .card-item.ativo {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+
+    .card-item-img,
+    .card-item-img-placeholder {
+        aspect-ratio: 3 / 2;
+        object-fit: contain;
     }
 }
