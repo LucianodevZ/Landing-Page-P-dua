@@ -166,3 +166,77 @@
         object-fit: contain;
     }
 }
+
+/* ===== ESPECIAL DO MÊS — destaque full width ===== */
+
+/* Desktop e tablet: ocupa as 2 colunas inteiras */
+.categoria-destaque {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+/* O único card fica centralizado e com largura limitada */
+.categoria-destaque .categoria-items {
+    display: flex;
+    justify-content: center;
+}
+
+.categoria-destaque .card-item {
+    width: 320px;
+    max-width: 100%;
+}
+
+.categoria-destaque .card-item-img {
+    aspect-ratio: 16 / 9;
+}
+
+/* Mobile: comportamento igual aos outros, sem scroll (1 card só) */
+@media (max-width: 640px) {
+    .categoria-destaque .categoria-items {
+        overflow-x: unset;
+        scroll-snap-type: unset;
+        justify-content: center;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .categoria-destaque .card-item {
+        flex: unset;
+        max-width: 100%;
+        width: 100%;
+        opacity: 1;
+    }
+
+    .categoria-destaque .card-item-img {
+        aspect-ratio: 16 / 9;
+    }
+}
+
+/* ===== BOTÃO VER MAIS ===== */
+.btn-ver-mais {
+    display: block;
+    margin-top: 14px;
+    margin-left: auto;
+    width: fit-content;
+    background-color: var(--botao-principal);
+    color: var(--texto-branco);
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 10px 24px;
+    border-radius: var(--radius-full);
+    transition: background-color 0.3s;
+}
+
+.btn-ver-mais:hover {
+    background-color: var(--botao-hover);
+}
+
+/* Mobile: botão centralizado */
+@media (max-width: 640px) {
+    .btn-ver-mais {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

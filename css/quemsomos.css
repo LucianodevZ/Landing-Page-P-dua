@@ -77,13 +77,22 @@
     line-height: 1.6;
 }
 
-.btn-saber-mais {
-    display: inline-block;
+/* Wrapper dos dois botões */
+.quem-somos-botoes {
+    display: flex;
+    gap: 12px;
     margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+.btn-saber-mais {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     align-self: flex-start;
     background-color: var(--cor-header);
     color: var(--texto-branco);
-    padding: 14px 40px;
+    padding: 14px 24px;
     border-radius: var(--radius-full);
     font-family: var(--fonte-texto);
     font-weight: 700;
@@ -92,9 +101,15 @@
     transition: 0.3s;
 }
 
+.btn-saber-mais img {
+    width: 20px;
+    height: 20px;
+}
+
 .btn-saber-mais:hover {
     background-color: #1a0e0a;
 }
+
 
 /* ===== TABLET (até 900px) ===== */
 @media (max-width: 900px) {
@@ -146,8 +161,12 @@
         font-size: 15px;
     }
 
-    .btn-saber-mais {
-        width: 100%;
-        text-align: center;
-    }
+    .quem-somos-botoes {
+    flex-direction: column;
+}
+
+.btn-saber-mais {
+    width: 100%;
+    justify-content: center;
+}
 }
