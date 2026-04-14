@@ -1,5 +1,6 @@
 body {
-  background-color: var(--cor-fundo);
-  color: var(--texto-branco);
-  font-family: var(--fonte-texto);
+    background-color: var(--cor-fundo);
+    color: var(--texto-branco);
+    font-family: var(--fonte-texto);
+    overflow-x: hidden;
 }

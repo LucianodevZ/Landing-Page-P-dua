@@ -63,3 +63,31 @@ window.addEventListener('scroll', () => {
     const scale = 1 + (Math.min(scrollY, maxScroll) / maxScroll) * (maxScale - 1);
     heroImg.style.setProperty('--scroll-scale', scale);
 });
+
+
+/* ===== MODAL DELIVERY ===== */
+const modalOverlay = document.getElementById('modal-delivery');
+const modalFechar = document.getElementById('modal-fechar');
+
+document.querySelectorAll('.abrir-modal').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        modalOverlay.classList.add('ativo');
+    });
+});
+
+modalFechar.addEventListener('click', function () {
+    modalOverlay.classList.remove('ativo');
+});
+
+modalOverlay.addEventListener('click', function (e) {
+    if (e.target === modalOverlay) {
+        modalOverlay.classList.remove('ativo');
+    }
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+        modalOverlay.classList.remove('ativo');
+    }
+});
